@@ -1,0 +1,108 @@
+body {
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #D3D3D3;
+    color: black;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo a {
+    margin-left: 200px;
+    color: black;
+    text-decoration: none;
+    font-size: 24px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav li {
+    position: relative;
+    margin-right: 35px;
+    left: -500px; /* Используйте отрицательное значение для сдвига влево */
+}
+
+nav a {
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 8px; /* Размер внутреннего отступа */
+    background-color: transparent; /* Прозрачный фон */
+    border: 2px solid #6A5ACD; /* Цвет обводки */
+    border-radius: 5px; /* Закругленные углы для создания квадрата */
+    border-bottom: none; /* Убираем нижнюю часть рамки */
+    transition: background-color 0.3s;
+}
+
+nav a:hover {
+    color: #6A5ACD;
+    background-color: #ddd; /* Темный цвет фона при наведении */
+}
+p {
+    font-weight: normal;
+    font-size: 20px;
+}
+.container {
+    max-width: 800px;
+    margin-left: 250px;
+    margin-top: 20px;
+    margin-bottom: 100px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.content p {
+    color: black;
+    font-size: 20px;
+    margin-bottom: 200px;
+}
+img {
+    max-width: 100%;
+    margin-right: 50px; /* Регулируйте отступ между изображением и текстом по вашему вкусу */
+    width: 400px;
+    height: 400px;
+}
+h1 {
+    color: #333;
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+p {
+    color: #666;
+    font-family: 'Arial', sans-serif;
+    text-align: justify;
+    margin-bottom: 20px;
+}

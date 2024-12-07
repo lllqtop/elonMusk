@@ -1,0 +1,130 @@
+body {
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+header {
+    background-color: #D3D3D3;
+    color: black;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo a {
+    margin-left: 20px;
+    color: black;
+    text-decoration: none;
+    font-size: 24px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+nav a {
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+a:hover {
+    color: #6A5ACD;
+}
+
+@media screen and (max-width: 600px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .logo {
+        margin-bottom: 10px;
+    }
+
+    nav {
+        order: -1;
+    }
+}
+p {
+    font-weight: normal;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="style.css">
+	<title>Сабина Хайрова</title>
+</head>
+<body>
+
+<header>
+        <div class="logo">
+            <a href="#">Логотип</a>
+        </div>
+        <nav>
+            <ul>
+		<li><a href="#">Биографии</li></a>
+		<li><a href="#">Контакты</li></a>
+		<li><a href="#">Предложка</li></a>
+            </ul>
+        </nav>
+    </header>
+    
+<div id="readingTime"></div>
+    <script>
+        const wordsPerMinute = 150;
+        const text = document.body.innerText.trim().split(/\s+/).length;
+        const readingTimeMinutes = Math.ceil(text / wordsPerMinute);
+
+        const readingTimeElement = document.getElementById('readingTime');
+        readingTimeElement.innerHTML = `Время чтения: ${readingTimeMinutes} мин.`;
+    </script>
+<h1>Детство и юность:</h1>
+<p>Илон Маск, сияющая звезда среди бизнес-титанов, начал свой путь под небесами Южной Африки. Родившись в Претории в 1971 году, его семейный путь разветвился на фоне развода родителей, когда ему было всего 10 лет. Мать Илона, Мэй Маск, с канадско-южноафриканскими корнями, и отец, Эррол Маск, инженер-строитель, взрастили Илона, его младшего брата Кимбала и младшую сестру Тоску.</p>
+<h1>Стремление к Звездам с Детства:</h1>
+<p>Уже в детстве Илон проявил ярко выраженный интерес к физике и космосу. Несмотря на трудности в общении и издевательства в школе, его внутренний огонь не погас. Восьмилетний Маск прочитал британскую энциклопедию, а в 10 лет освоил курс программирования, рассчитанный на полгода, за три дня. А в 12 лет создал и продал свою первую игру.</p>
+<h1>Переломный момент:</h1>
+<p>В 14 лет Илон столкнулся с вопросами смысла своего существования и решил, что его цель — спасти мир. Этот энтузиазм и убеждённость привели его по невероятному пути, вдохновляя миллионы и поколения будущих лидеров.</p>
+<h1>Обучение и Становление:</h1>
+<p>После переезда на запад для обучения, Илон поступил в университет Куинс в Кингстоне, затем перевёлся в Пенсильванский университет, где получил степени бакалавра экономики и физики. Однако его увлечение интернетом и стремление к новым горизонтам заставили его покинуть Стэнфорд всего через два дня после поступления.</p>
+<h1>Первые Шаги в Бизнесе:</h1>
+<p>Илон основал свою первую компанию, Zip2 Corporation, которая представляла собой путеводитель по городам. Проект был куплен крупными инвесторами за внушительную сумму, и это стало стартовой точкой для дальнейших свершений.</p>
+<h1>PayPal и Банковская Революция:</h1>
+<p>Создание X.com и дальнейшее развитие в платежную систему PayPal открыли новую эпоху в онлайн-транзакциях. Хотя Илона вытеснили из компании, его следующий шаг был невероятным — продажа PayPal компании eBay за 1,5 миллиарда долларов.</p>
+
+     
+</body>
+</html>
+
+
+
+
+
+
